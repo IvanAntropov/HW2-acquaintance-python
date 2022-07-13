@@ -23,7 +23,7 @@ def makeTheList(num):
 def makeTextPositionAndMulti(listOfNumbers):
     
     position = input('Enter position: ') # я бы мог сделать проверку на дурака, но я много времени потратил чтоб разобрать с файлами
-    position = position.strip()
+    position = position.strip()          # Если что это функция предлагает тебе сначало создать текстовый файл, а затем берет оттуда информацию
     while "  " in position:
         position= position.replace("  ", " ")
     positionInList = position.split(' ')
