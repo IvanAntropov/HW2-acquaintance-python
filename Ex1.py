@@ -11,14 +11,27 @@ def InputValues (text: str):
             number = float(input(f'{text}'))
     return number
 
-def Summ (n: float):
+def Summ (n):
     num = n
-    while num < 1:
-        num = num *10
-    print(num)
-    nInInt = int(num)
-    print(nInInt)
-    print(n%1000)
+    result = 0
+    while num is not int:
+        num = num * 10
+        print (num)
+    return result
 
 number = InputValues('Enter real number: ')
 print(f'{Summ(number)}')
+
+# n = int(input())
+ 
+# suma = 0
+# mult = 1
+ 
+# while n > 0:
+#     digit = n % 10
+#     suma = suma + digit
+#     mult = mult * digit
+#     n = n // 10
+ 
+# print(suma)
+# print(mult)
