@@ -43,5 +43,3 @@ numberN = InputValues('Enter number N: ')
 listOfNumbers = makeTheList(numberN)
 print(listOfNumbers)
 makeTextPositionAndMulti(listOfNumbers)
-
-
